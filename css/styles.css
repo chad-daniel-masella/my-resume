@@ -11,11 +11,85 @@
   
   main {
     margin: auto;
-    width: 50%;
-    padding: 20px;
+    /* margin-top: 10px; */
+    width: 75%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
   }
   
   main > h1 {
     text-align: center;
     font-size: 3.5em;
   }
+
+/* css grid styles */
+
+.my-name-title { grid-area: name;}
+.my-info {grid-area: info;}
+.my-profile {grid-area: profile;}
+.my-visa-requirements {grid-area: visa;}
+.my-employment-hist {grid-area: employment;}
+.my-education {grid-area: education;}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+  'name name name'
+  'info profile profile'
+  'info visa visa'
+  'info employment employment'
+  'info education education';
+  /* gap: 10px; */
+  background-color: #ffffff;
+}
+
+/* page elements styles: my-info*/
+
+.my-info {
+  background-color: rgb(241, 241, 241);
+  width: 300px;
+}
+
+/* page elements styles: my-name-title*/
+
+.my-name-title {
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.name-container {
+  border: 1.75px solid black;
+  width: 700px;
+  padding: 3.75%;
+  margin-left: -120px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: white;
+}
+
+.empty-element {
+  width: auto;
+  background-color: rgb(241, 241, 241);
+  width: 300px;
+}
+
+.name-container .empty-element {
+  grid-row: 1/2;
+}
+
+my-name {
+  font-size: 25px;
+}
+
+my-name > h1 {
+  margin-left: 50px;
+}
+
+my-title {
+  font-size: 17.5px;
+}
+
+my-title {
+  margin-left: 50px;
+}
