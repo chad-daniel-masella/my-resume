@@ -27,6 +27,7 @@
 .my-info {grid-area: info;}
 .my-profile {grid-area: profile;}
 .my-visa-requirements {grid-area: visa;}
+.core-competencies{grid-area: competencies;}
 .my-employment-hist {grid-area: employment;}
 .my-education {grid-area: education;}
 
@@ -36,6 +37,7 @@
   'name name name'
   'info profile profile'
   'info visa visa'
+  'info competencies competencies'
   'info employment employment'
   'info education education';
   /* gap: 10px; */
@@ -211,6 +213,44 @@ ul.my-skills-items > li {
   margin-left: 40px;
   border-bottom-style: solid;
   border-bottom-width: 0.75px;
+  display: none;
+}
+
+/* core-competencies */
+.core-competencies > h1 {
+  font-size: 25px;
+  text-align: left;
+  width: 100%;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  /* margin-left: 40px; */
+  border-bottom-style: solid;
+  border-bottom-width: 0.75px;
+}
+
+.core-competencies {
+  width: 80%;
+  /* padding-bottom: 10px; */
+  /* padding-top: 10px; */
+  margin-left: 40px;
+  border-bottom-style: solid;
+  border-bottom-width: 0.75px;
+}
+
+.core-comp-holder > ul > li {
+  margin-top: 30px;
+}
+
+.list-one { grid-area: list-one;}
+.list-two { grid-area: list-two;}
+.list-three { grid-area: list-three;}
+
+.core-comp-holder {
+  display: grid;
+  grid-template-areas: 
+  'list-one list-two list-three';
+  /* gap: 10px; */
+  /* background-color: #ffffff; */
 }
 
 /* my-employment-hist */
@@ -283,4 +323,28 @@ institution-name {
   font-weight: bold;
 }
 
+.my-educ {
+  padding: 10px;
+}
 
+.my-educ-1 { grid-area: my-educ-1;}
+.my-educ-2 { grid-area: my-educ-2;}
+.my-educ-3 { grid-area: my-educ-3;}
+
+.my-educ-container {
+  display: grid;
+  grid-template-areas: 
+  'my-educ-1'
+  'my-educ-2'
+  'my-educ-3';
+  /* gap: 10px; */
+  /* background-color: #ffffff; */
+}
+
+.my-educ-container > div {
+  padding-bottom: 40px;
+}
+
+.my-educ-container > div > location {
+  display: none;
+}
