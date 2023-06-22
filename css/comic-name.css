@@ -1,0 +1,15 @@
+/*
+    Imports for the different screen sizes for the comic-name element
+*/
+
+@import "comic-name/comic-name-320.css";
+@import "comic-name/comic-name-375.css";
+@import "comic-name/comic-name-425.css";
+@import "comic-name/comic-name-768.css";
+@import "comic-name/comic-name-1024.css";
+@import "comic-name/comic-name-1440.css";
+@import "comic-name/comic-name-2560.css";
+
+
+
+
